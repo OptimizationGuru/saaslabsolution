@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Table from './components/Table';
 import Pagination from './components/Pagination';
 import { api_url } from './utils/constants';

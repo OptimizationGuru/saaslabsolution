@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   FaChevronLeft,
   FaChevronRight,
@@ -73,7 +72,7 @@ const Pagination = ({
 
       {pageButtons.map((page) => (
         <button
-          key={page}
+          key={page * 2 + 1}
           className={`pagination-button ${currentPage === page ? 'active' : ''}`}
           onClick={() => handlePageChange(page)}
           aria-label={`Go to page ${page}`}

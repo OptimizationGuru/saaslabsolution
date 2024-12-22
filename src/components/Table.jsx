@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Table = ({ data, s_no }) => {
   return (
     <table
@@ -23,11 +21,10 @@ const Table = ({ data, s_no }) => {
             {
               'amt.pledged': amountPledged,
               'percentage.funded': percentageFunded,
-              currency,
             },
             index
           ) => (
-            <tr key={index}>
+            <tr key={index * (s_no + 1)}>
               <td>{s_no + index + 1}</td>
               <td>{percentageFunded}</td>
               <td>{amountPledged}</td>
